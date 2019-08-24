@@ -16,12 +16,12 @@ var countCharacters = function(words, chars) {
 
 function checkGoodWord(word, array) {
     for (let j = 0; j < word.length; j++) {
-    let index = array.indexOf(word[j])
-    if (index !== -1) {
-        array.splice(index, 1)
-    } else {
-        return false
+        let index = array.indexOf(word[j])
+        if (index !== -1) {
+            array.splice(index, 1)
+        } else {
+            return false
+        }
     }
-}
     return true
 }
