@@ -19,20 +19,20 @@ let tictactoe = function(moves) {
     	[[0, 2], [1, 1], [2, 0]]
     ]
     let aSteps = [],
-	    bSteps = []
+        bSteps = []
     for (let i = 0; i < moves.length; i ++) {
     	if (i % 2) {
-    		bSteps.push(moves[i])
+    	    bSteps.push(moves[i])
     	} else {
-    		aSteps.push(moves[i])
+    	    aSteps.push(moves[i])
     	}
     }
     for (let i = 0; i < winList.length; i ++) {
     	if (winList[i].every(r => ifArrayInArray(aSteps, r))) {
-    		return "A"
+    	    return "A"
     	}
     	if (winList[i].every(r => ifArrayInArray(bSteps, r))) {
-    		return "B"
+    	    return "B"
     	}
     }
 
