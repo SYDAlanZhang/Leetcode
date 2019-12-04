@@ -49,5 +49,5 @@ let tictactoe = function(moves) {
     	    }
     	}
     	return false;
-	}
+    }
 };
