@@ -44,9 +44,9 @@ let tictactoe = function(moves) {
 
     function ifArrayInArray(wholeArray, partArray) {
     	for (let i = 0; i < wholeArray.length; i ++) {
-    		if (wholeArray[i][0] == partArray[0] && wholeArray[i][1] == partArray[1]) {
-    		return true;
-    		}
+    	    if (wholeArray[i][0] == partArray[0] && wholeArray[i][1] == partArray[1]) {
+    	        return true;
+    	    }
     	}
     	return false;
 	}
